@@ -6,6 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
-    site: 'https://kyroninja.github.io'
+    site: 'https://kyroninja.github.io',
+    base: '/devportfolio'
   },
 });
