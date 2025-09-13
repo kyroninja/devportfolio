@@ -7,6 +7,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     site: 'https://kyroninja.github.io',
-    base: '/devportfolio'
+    base: '/devportfolio/'
   },
 });
