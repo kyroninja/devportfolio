@@ -8,7 +8,7 @@ export const siteConfig = {
   social: {
     email: "pratz.neerputh@email.com",
     linkedin: "https://linkedin.com/in/kyroninja",
-    twitter: "https://twitter.com/kyroninja",
+    twitter: "https://x.com/kyroninja",
     github: "https://github.com/kyroninja",
   },
   aboutMe:
