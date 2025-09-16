@@ -1,13 +1,15 @@
+import { date } from "astro:schema";
+
 export const siteConfig = {
   name: "Pratish Neerputh",
   title: "Electrical Engineer & Business Intelligence Engineer",
   description: "Portfolio website of Pratish Neerputh - Electrical Engineer specializing in Business Intelligence, Python development, and IoT solutions",
-  accentColor: "#1d4ed8",
+  accentColor: "#299ac7ff",
   social: {
-    email: "pratz.neerputh@email.com", // Update with actual email
-    linkedin: "https://linkedin.com/in/kyroninja", // Update with actual LinkedIn
-    twitter: "https://twitter.com/kyroninja", // Update with actual Twitter
-    github: "https://github.com/kyroninja", // Update with actual GitHub
+    email: "pratz.neerputh@email.com",
+    linkedin: "https://linkedin.com/in/kyroninja",
+    twitter: "https://twitter.com/kyroninja",
+    github: "https://github.com/kyroninja",
   },
   aboutMe:
     "Experienced Electrical Engineer and Business Intelligence Engineer with a passion for Python development, machine learning, and IoT solutions. Proven track record in hackathons, infrastructure maintenance, and developing innovative solutions for complex engineering challenges. Expertise in data analysis, automation systems, and electrical project management.",
@@ -23,7 +25,7 @@ export const siteConfig = {
     "AutoCAD",
     "MATLAB",
     "Simulink",
-    "SAP Plant Maintenance",
+    "SAP",
     "Data Analytics",
     "Automation",
     "Electrical Engineering"
@@ -32,7 +34,7 @@ export const siteConfig = {
     {
       name: "EmpowerHer AI Hackathon - GBV Reporting Chatbot",
       description: "3rd place winner. Designed and implemented a WhatsApp chatbot for confidential workplace GBV reporting using AI and natural language processing.",
-      link: "#", // Add actual link if available
+      link: "#", 
       skills: ["Python", "AI Chatbot", "WhatsApp API", "NLP"],
       year: "2024"
     },
@@ -86,6 +88,13 @@ export const siteConfig = {
       year: "2022"
     },
     {
+      name: "App/SMS Controlled E-Textile",
+      description: "Smart textile system controlled via mobile app and SMS integration for wearable technology applications.",
+      link: "#",
+      skills: ["IoT", "Embedded Systems", "Textile Technology", "Mobile Integration"],
+      year: "2022"
+    },
+    {
       name: "Scale Mini Cooper Control System",
       description: "Custom Arduino-based control system for vintage Mini Cooper with XBOX controller integration, featuring speed control and motor overdrive functionality.",
       link: "#",
@@ -98,18 +107,11 @@ export const siteConfig = {
       link: "#",
       skills: ["Raspberry Pi", "Python", "OBD-II", "Hardware Integration"],
       year: "2019"
-    },
-    {
-      name: "App/SMS Controlled E-Textile",
-      description: "Smart textile system controlled via mobile app and SMS integration for wearable technology applications.",
-      link: "#",
-      skills: ["IoT", "Embedded Systems", "Textile Technology", "Mobile Integration"],
-      year: "2022"
     }
   ],
   experience: [
     {
-      company: "Tevo Pty (Ltd)", // Update with actual company name
+      company: "Tevo Pty (Ltd)", 
       title: "Business Intelligence Engineer",
       dateRange: "June 2023 - Current",
       bullets: [
@@ -136,7 +138,7 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Transnet", // Inferred from context
+      company: "Transnet", 
       title: "Maintenance Manager: Planning",
       dateRange: "April 2022 - June 2023",
       bullets: [
@@ -162,42 +164,52 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Transnet", // Inferred from context
+      company: "Transnet", 
       title: "Electrical Engineer",
-      dateRange: "May 2020 - March 2022",
+      dateRange: "May 2018 - March 2022",
       bullets: [
-        "Supervised Lean Six Sigma White Belt projects by providing guidance with data analysis, determining root cause, applying Lean tools, proofreading work, and advising on improvements for tollgate reviews",
-        "Prepared and implemented new technologies through review and consultation with senior electrical engineers, highlighting shortcomings and making recommendations to address gaps",
-        "Led electrical technical forum for material availability and technology improvement by monitoring resources, ensuring sufficient material levels through approved replacement/ordering processes",
-        "Reviewed documentation of new technologies by analyzing practical benefits and determining ease of implementation within departmental budgets",
-        "Gained exposure to design and engineering principles through site visits during projects and provided clarity on new concepts to on-site personnel",
-        "Designed and implemented SAP automation system using VBA macros for automated creation and scheduling of electrical department maintenance plans",
-        "Planned and executed essential infrastructure maintenance projects through condition assessments including micrometer and stagger readings, and correction of identified defects",
-        "Conducted trend and root cause analysis of departmental performance statistics using Pareto analysis, pivot charts and graphs to identify trends and hotspot areas with improvement recommendations",
-        "Managed infrastructure maintenance planning personnel by implementing shift/rotation systems for overtime management and providing guidance on new concepts",
-        "Ensured compliance to Transnet maintenance standards and adherence implementation across all operations",
-        "Managed electrical assets using asset lifecycle analysis to identify obsolete equipment and plan replacements within budget constraints",
-        "Ensured engineering and safety compliance through symposiums, daily green area meetings, and employee engagement to reinforce understanding",
-        "Maintained substation availability by prioritizing rehabilitation of high-impact substations during breakdown events",
-        "Effectively managed OPEX and COPEX budgets through monthly and yearly forecasting strategies with weekly tracking and expenditure oversight",
-        "Managed procurement of maintenance materials and resources by ensuring timely order submission to minimize delays and expedite delivery",
-        "Managed infrastructure maintenance execution personnel through standby roster rotation and daily morning conferences for activity planning",
-        "Ensured safety compliance through monthly symposiums, awareness sessions, and daily green area talks on safety procedures",
-        "Managed personnel overtime and productivity through shift/rotation systems, jobcard submission tracking, and corrective actions for non-compliance",
-        "Allocated human and material resources for planned work execution through planning team engagement and holistic weekly activity overview",
-        "Effectively managed contracted vehicle kilometers and speed monitoring through weekly tracking, vehicle grounding protocols, and corrective actions for speed limit violations"
+        "Supervised Lean Six Sigma White Belt projects: guided data analysis, identified root causes, applied Lean tools, proofread work, and advised on tollgate improvements.",
+        "Reviewed and implemented new technologies with senior engineers, addressing gaps and recommending solutions.",
+        "Led electrical technical forum: monitored resources, ensured material availability through approved ordering/replacement processes.",
+        "Analyzed new technology documentation: assessed practical benefits and budget-aligned implementation feasibility.",
+        "Gained hands-on design and engineering exposure via site visits and clarified new concepts to on-site staff.",
+        "Designed and implemented SAP automation using VBA macros for scheduling electrical maintenance plans.",
+        "Planned and executed infrastructure maintenance: condition assessments, micrometer/stagger readings, defect corrections.",
+        "Conducted departmental performance analysis using Pareto charts, pivot tables, and graphs to identify trends and improvement areas.",
+        "Managed maintenance planning personnel with shift/rotation systems and guidance on new concepts.",
+        "Ensured compliance with Transnet maintenance standards across operations.",
+        "Managed electrical assets through lifecycle analysis, identifying obsolete equipment and planning budget-conscious replacements.",
+        "Reinforced engineering and safety compliance via symposiums, daily green area meetings, and employee engagement.",
+        "Maintained substation availability by prioritizing rehabilitation of high-impact substations during breakdowns.",
+        "Oversaw OPEX and CAPEX budgets with forecasting strategies, weekly tracking, and expenditure oversight.",
+        "Managed procurement of maintenance materials: ensured timely orders to minimize delays and expedite delivery.",
+        "Directed infrastructure maintenance execution personnel through standby roster rotations and morning planning conferences.",
+        "Ensured safety compliance with monthly symposiums, awareness sessions, and daily green area talks.",
+        "Controlled personnel overtime and productivity through shift/rotation systems, jobcard tracking, and corrective measures.",
+        "Allocated human and material resources for planned work via planning team coordination and weekly activity overviews.",
+        "Managed contracted vehicle performance: monitored kilometers, speed compliance, grounding protocols, and corrective actions."
       ],
     }
   ],
   education: [
     {
-      school: "University Name", // Update with actual university
-      degree: "Bachelor of Electrical Engineering",
-      dateRange: "Year - Year", // Update with actual dates
+      school: "University of Kwa-Zulu Natal",
+      degree: "Bachelor of Science: Electrical Engineering",
+      dateRange: "2012 - 2017", // Update with actual dates
       achievements: [
         "Specialized in Electrical Engineering with focus on power systems",
         "Participated in multiple engineering projects and hackathons",
         "Developed expertise in automation and control systems"
+      ],
+    }
+    {
+      school: "University of Kwa-Zulu Natal",
+      degree: "Post Graduate Diploma: Data Science",
+      dateRange: "2021 - Current", // Update with actual dates
+      achievements: [
+        "Focused on data analysis, machine learning, and big data technologies",
+        "Completed projects involving real-world data sets and predictive modeling",
+        "Gained proficiency in Python, R, and SQL for data manipulation and analysis"
       ],
     }
   ],
@@ -218,7 +230,7 @@ export const siteConfig = {
       name: "Reduction of Substation Failures at Boughton",
       dateRange: "01 December 2020 - 30 May 2021",
       description: "Lean Six Sigma project to reduce substation failures from 1.1 per week to zero using DMAIC methodology",
-      role: "Project Engineer",
+      role: "Project Lead",
       responsibilities: [
         "Identified PCB component contributing to most delays and incidents",
         "Applied Lean methodology to close performance gap by 80%",
@@ -230,7 +242,7 @@ export const siteConfig = {
       name: "Automated Departmental Performance Report Generator",
       dateRange: "July 2021",
       description: "Created automated 20-page monthly performance report system using Excel and VBA",
-      role: "Developer/Engineer",
+      role: "Developer",
       responsibilities: [
         "Connected to database using Excel's database access capabilities",
         "Developed VBA code for automatic table updates",
@@ -242,7 +254,7 @@ export const siteConfig = {
       name: "Lightning Substation Tripping Investigation",
       dateRange: "August 2021",
       description: "Investigated and resolved repeated substation tripping during lightning storms",
-      role: "Lead Engineer",
+      role: "Project Lead",
       responsibilities: [
         "Analyzed five years of substation data and conducted site visits",
         "Identified incorrect earthing of primary lightning arrestors as root cause",
@@ -276,7 +288,7 @@ export const siteConfig = {
       name: "Replacement of Steel Earth Wire from Dundee to Tayside",
       dateRange: "16 January 2021 - 25 January 2021",
       description: "Replaced 20km of rust-susceptible steel earth wire with aluminum to prevent OHTE hookups",
-      role: "Project Manager",
+      role: "Technical Officer",
       responsibilities: [
         "Oversaw project execution and resolved on-site challenges",
         "Managed daily targets of 2km wire replacement",
