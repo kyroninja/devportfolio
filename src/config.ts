@@ -201,7 +201,7 @@ export const siteConfig = {
         "Participated in multiple engineering projects and hackathons",
         "Developed expertise in automation and control systems"
       ],
-    }
+    },
     {
       school: "University of Kwa-Zulu Natal",
       degree: "Post Graduate Diploma: Data Science",
