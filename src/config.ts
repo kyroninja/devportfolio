@@ -205,7 +205,7 @@ export const siteConfig = {
     {
       school: "University of Kwa-Zulu Natal",
       degree: "Post Graduate Diploma: Data Science",
-      dateRange: "2021 - Current", // Update with actual dates
+      dateRange: "2024 - 2025", // Update with actual dates
       achievements: [
         "Focused on data analysis, machine learning, and big data technologies",
         "Completed projects involving real-world data sets and predictive modeling",
